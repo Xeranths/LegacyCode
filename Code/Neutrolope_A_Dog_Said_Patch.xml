@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>A Dog Said... Animal Prosthetics</li>
+			<li>A Dog Said... Lite</li>
+			<li>A Dog Said... Animal Prosthetics_NOCAT</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+					<!-- Curing wounds recipe == should be all animals-->
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/RecipeDef[@Name = "OldWoundsAnimal"]/recipeUsers</xpath>
+						<value>
+							<li>Neutrolope</li>
+						</value>
+					</li>
+		    	<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallSimpleProstheticTailAnimal"]/recipeUsers</xpath>
+				  <value>
+						<li>Neutrolope</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallPowerClawAnimal"]/recipeUsers</xpath>
+				  <value>
+						<li>Neutrolope</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallPegLegAnimal" or defName = "InstallSimpleProstheticLegAnimal" or defName = "InstallBionicLegAnimal"]/recipeUsers</xpath>
+				  <value>
+						<li>Neutrolope</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallNoseAnimalSimple"]/recipeUsers</xpath>
+				  <value>
+						<li>Neutrolope</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallBionicEyeAnimal"]/recipeUsers</xpath>
+				  <value>
+						<li>Neutrolope</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallEarAnimalBionic" or defName = "InstallEarAnimalSimple"]/recipeUsers</xpath>
+				  <value>
+						<li>Neutrolope</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallJawAnimalBionic" or defName = "InstallJawAnimalSimple"]/recipeUsers</xpath>
+				  <value>
+						<li>Neutrolope</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallSpineAnimalBionic" or defName = "InstallSpineAnimalSimple"]/recipeUsers</xpath>
+				  <value>
+						<li>Neutrolope</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallAnimalBrainStimulator"]/recipeUsers</xpath>
+				  <value>
+						<li>Neutrolope</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalHeart"]/recipeUsers</xpath>
+				  <value>
+						<li>Neutrolope</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalLung"]/recipeUsers</xpath>
+				  <value>
+						<li>Neutrolope</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalLiver"]/recipeUsers</xpath>
+				  <value>
+						<li>Neutrolope</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalKidney"]/recipeUsers</xpath>
+				  <value>
+						<li>Neutrolope</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalStomach"]/recipeUsers</xpath>
+				  <value>
+						<li>Neutrolope</li>
+				  </value>
+			   </li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
